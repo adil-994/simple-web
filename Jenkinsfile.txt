@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     environment {
-        IMAGE = "umairmakhdoom29/simple-web"
+        IMAGE = "adilshahzad994/simple-web"
         TAG = "1.0-${env.BUILD_NUMBER}"
     }
 
@@ -10,7 +10,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git url: 'https://github.com/BSSE23010/simple-web.git'
+                git url: 'https://github.com/adil-994/simple-web.git'
             }
         }
 
